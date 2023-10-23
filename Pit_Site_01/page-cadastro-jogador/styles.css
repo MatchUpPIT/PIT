@@ -9,7 +9,7 @@ body * {
   box-sizing: border-box;
 }
 
-.main-cadastro-pessoal {
+.main-cadastro-jogador {
   width: 100vw;
   height: 100vh;
   background: #201b2c;
@@ -18,7 +18,7 @@ body * {
   align-items: center;
 }
 
-.card-cadastro-pessoal {
+.card-cadastro-jogador {
   background: #2f2841;
   width: 30%;
   border-radius: 20px;
@@ -30,7 +30,7 @@ body * {
   padding: 30px 35px;
 }
 
-.card-cadastro-pessoal > h1 {
+.card-cadastro-jogador > h1 {
   color: #00ff88;
   font-weight: 800;
   margin: 0;
@@ -62,21 +62,44 @@ body * {
   box-sizing: border-box;
 }
 
+.textfield > select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12bt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}  
+
+.textfield > textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12bt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+  resize: none;
+}
+
 .textfield > input::placeholder {
   color: #f0ffff94;
 }
 
-.buttons-cadastro {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 20px;
+.textfield > textarea::placeholder {
+  color: #f0ffff94;
 }
 
-.buttons-cadastro > button {
+.btn-criar {
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   margin: 10px;
   border: none;
   border-radius: 8px;
@@ -91,8 +114,13 @@ body * {
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-@media only screen and (max-width: 600px) {
-    .card-cadastro-pessoal {
-        width: 90%;
-    }
+a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  text-decoration: none;    
+  padding: 5px;
 }
+

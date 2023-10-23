@@ -94,17 +94,22 @@ body * {
   color: #f0ffff94;
 }
 
+.lbl-esqueceu-senha {
+  padding: 5px;
+  font-size: 13px;
+}
+
 .btn-login {
   width: 100%;
   padding: 16px 0;
-  margin: 25px;
+  margin: 10px;
   border: none;
   border-radius: 8px;
   outline: none;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 17px;
-  letter-spacing: 2px;
+  font-size: 19px;
+  letter-spacing: 1px;
   color: #2b134b;
   background: #00ff88;
   cursor: pointer;
@@ -115,11 +120,11 @@ body * {
   color: #f0ffffde;
 }
 
-.btn-login-label > a {
+a {
   text-decoration: none;
 }
 
-.btn-login-label > a:visited {
+a:visited {
   cursor: pointer;
   color: #00ff88;
 }

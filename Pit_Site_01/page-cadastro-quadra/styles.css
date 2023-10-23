@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0; 
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-cadastro-quadra {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cadastro-quadra {
+  background: #2f2841;
+  width: 30%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 40px #00000056;
+  padding: 30px 35px;
+}
+
+.card-cadastro-pessoal > h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  justify-content: left;
+  width: 100%;
+}
+
+.checkboxs {
+  display: flex;
+  
+}
