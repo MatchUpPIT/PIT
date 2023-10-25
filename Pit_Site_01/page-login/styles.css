@@ -24,7 +24,7 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column; /*Alinhar os elementos um embaixo do outro mesmo com o uso de display: flex*/
 }
 
 .left-login > h1 {
@@ -54,7 +54,7 @@ body * {
   padding: 30px 35px;
   background: #2f2841;
   border-radius: 20px;
-  box-shadow: 0px 10px 40px #00000056;
+  box-shadow: 0px 10px 40px #00000056; /*Sombra do card*/
 }
 
 .card-login > h1 {
