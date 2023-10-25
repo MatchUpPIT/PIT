@@ -1,6 +1,6 @@
     <?php
 
-    require_once("usuario.php");
+    //require_once("usuario.php");
 
     class Login{
         private $email = "";
@@ -39,7 +39,10 @@
 
         if ($mensagem) {
             echo "Login feito com sucesso";
-            header("Location: motorista.perfil.html");
+            // Criar sessão e armazenar os dados do usuários
+            // Referência: https://www.w3schools.com/php/php_sessions.asp
+            //             https://www.w3schools.blog/php-program-to-create-login-and-logout-using-sessions
+            header("Location: ../page-tela-inicial/index.html"); // mudar para php e validar a sessão na página
         } else {
             echo "Usuário não encontrado!";
         }
