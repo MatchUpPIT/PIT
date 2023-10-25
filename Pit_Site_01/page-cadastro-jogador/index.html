@@ -15,6 +15,7 @@
             <div class="textfield">
                 <label for="esportes">Esporte</label>
                 <select id="esportes" name="esportes" placeholder="Selecione seu esporte">
+                    <option value="">Escolha o esporte</option>
                     <option value="Basquete">Basquete</option>
                     <option value="Futsal">Futsal</option>
                     <option value="Futvolei">Futvolei</option>
@@ -25,22 +26,22 @@
             <div class="textfield">
                 <label for="posicao-favorita">Posição Favorita</label>
                 <select id="posicao-favorita" name="posicao-favorita" placeholder="Selecione sua posição">
-                    <option value="">Escolha o esporte</option>
+                    <option value="">Escolha a posição, após selecionar o esporte</option>
                 </select>
             </div>
             <div class="textfield">
                 <label for="peso">Peso</label>
-                <input type="number"  step="0.01" max="200" min="20" name="peso" placeholder="Digite seu peso (em kg, mínimo: 20 - máximo: 200)">
+                <input type="number" id="peso"  step="0.01" max="200" min="20" name="peso" placeholder="Digite seu peso (em kg, mínimo: 20 - máximo: 200)">
             </div>
             <div class="textfield">
                 <label for="altura">Altura</label>
-                <input type="number" step="0.01" name="altura" max="2.50" min="1.20" placeholder="Digite sua altura (em m, mínimo: 1,20 - máximo: 2,50)">
+                <input type="number" id="altura" step="0.01" name="altura" max="2.50" min="1.20" placeholder="Digite sua altura (em m, mínimo: 1,20 - máximo: 2,50)">
             </div>
             <div class="textfield">
                 <label for="estilo-jogo">Estilo de Jogo</label>
-                <textarea type="text" rows="3" name="altura" placeholder="Descreva seu estilo de jogo"></textarea>
+                <textarea type="text" id="descricao" rows="3" name="estilo-jogo" placeholder="Descreva seu estilo de jogo"></textarea>
             </div>
-            <button class="btn-criar">Criar</button>
+            <button class="btn-criar" id="btn-criar">Criar</button>
                 
             </div>
         </div>

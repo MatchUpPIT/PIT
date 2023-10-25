@@ -3,12 +3,13 @@ document.getElementById("btn-cadastro-jogador").addEventListener("click", functi
     const lblEmail = document.getElementById("email").value;
     const lblSenha = document.getElementById("senha").value;
     const lblConfirmarSenha = document.getElementById("confirmarSenha").value
+    const condicaoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     
     if (lblNome !== "") {
-        if (lblEmail !== "") {
+        if (condicaoEmail.test(lblEmail)) {
             if (lblSenha !== "") {
                 if (lblConfirmarSenha === lblSenha) {
-                    window.location.replace("../page-cadastro-jogador/index.html")
+                    window.location.href = ("../page-cadastro-jogador/index.html")
                 } else {
                     alert("As senhas não são compatíveis");
                 }
@@ -16,7 +17,7 @@ document.getElementById("btn-cadastro-jogador").addEventListener("click", functi
                 alert("Digite uma senha");
             }
         } else {
-            alert("Digite seu email");
+            alert("Digite um email válido");
         }
     } else {
         alert("Digite seu nome");
@@ -24,7 +25,7 @@ document.getElementById("btn-cadastro-jogador").addEventListener("click", functi
 });
 
 
-document.getElementById("btn-cadastro-jogador").addEventListener("click", function() {
+document.getElementById("btn-cadastro-quadra").addEventListener("click", function() {
     const lblNome = document.getElementById("nome").value;
     const lblEmail = document.getElementById("email").value;
     const lblSenha = document.getElementById("senha").value;
