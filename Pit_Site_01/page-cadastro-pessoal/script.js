@@ -3,18 +3,23 @@ document.getElementById("btn-cadastro-jogador").addEventListener("click", functi
     const lblEmail = document.getElementById("email").value;
     const lblSenha = document.getElementById("senha").value;
     const lblConfirmarSenha = document.getElementById("confirmarSenha").value
+    const lblDataNasc = document.getElementById("data").value;
     const condicaoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     
     if (lblNome !== "") {
         if (condicaoEmail.test(lblEmail)) {
-            if (lblSenha !== "") {
-                if (lblConfirmarSenha === lblSenha) {
-                    window.location.href = ("../page-cadastro-jogador/index.html")
+            if (data !== "") {    
+                if (lblSenha !== "") {
+                    if (lblConfirmarSenha === lblSenha) {
+                        window.location.href = ("../page-cadastro-jogador/index.html")
+                    } else {
+                        alert("As senhas não são compatíveis");
+                    }
                 } else {
-                    alert("As senhas não são compatíveis");
+                    alert("Digite uma senha");
                 }
             } else {
-                alert("Digite uma senha");
+                alert("Digite sua data de nascimento")
             }
         } else {
             alert("Digite um email válido");
