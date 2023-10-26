@@ -26,13 +26,11 @@ esporteEscolhido.addEventListener("change", () => {
 document.getElementById("btn-criar").addEventListener("click", function() {
     const lblEsportes = document.getElementById("esportes").value;
     const lblPosicao = document.getElementById("posicao-favorita").value;
-    const lblPeso = document.getElementById("peso").value;
     const lblAltura = document.getElementById("altura").value;
     const lblDescricao = document.getElementById("descricao").value;
 
     if (lblEsportes !== "") {
         if (lblPosicao !== "") {
-            if (lblPeso >= 20 && lblPeso <= 200) {
                 if (lblAltura >= 1.2 && lblAltura <= 2.5) {
                     if (lblDescricao !== "") {
                         window.location.href = "../page-tela-inicial/index.html"
@@ -42,9 +40,6 @@ document.getElementById("btn-criar").addEventListener("click", function() {
                 } else {
                     alert("Digite um altura válida")
                 }
-            } else {
-                alert("Digite um peso decente válido")
-            }
         } else {
             alert("Selecione uma posição")
         }
