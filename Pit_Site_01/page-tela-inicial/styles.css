@@ -49,8 +49,7 @@ body * {
 .center-cabecalho {
   color: #00ff88;
   font-size: 30px;
-  font-weight: 800;
-
+  font-weight: 800; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +58,16 @@ body * {
 .main-tela-inicial {
   background: #201B2C;
   width: 100vw;
-  height: 100vh;
+  height: 91.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-    
+.card-perfil {
+  background: #2F2841;
+  width: 30%;
+  height: 400px;
+  border-radius: 20px;
+
+}
