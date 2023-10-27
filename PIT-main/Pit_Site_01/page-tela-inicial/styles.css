@@ -3,6 +3,7 @@
 body {
   margin: 0; 
   font-family: 'Noto Sans', sans-serif;
+  background: #201B2C;
 }
 
 body * {
@@ -14,6 +15,8 @@ body * {
   background: #2F2841;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  opacity: 70%;
 }
 
 .left-cabecalho {
@@ -56,18 +59,105 @@ body * {
 }
 
 .main-tela-inicial {
-  background: #201B2C;
-  width: 100vw;
-  height: 91.2vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card-perfil {
+  margin: 150px;
   background: #2F2841;
-  width: 30%;
-  height: 400px;
+  width: 70%;
+  height: 500px;
   border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
 
+.card-perfil > h1 {
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+}
+
+.btn-foto-perfil {
+  background: transparent;
+  cursor: pointer;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  height: 200px;
+}
+
+.img-foto-perfil {
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #F0FFFF
+}
+
+.left-card > label {
+  padding: 20px 0;
+}
+
+.inf-card {
+  background: #3E3650;
+  color: #F0FFFF;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-editar {
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.img-editar {
+  width: 100%;
+  height: 100%;
+}
+
+.div-btn-editar {
+  display: flex;
+  justify-content: right;
+}
+
+.apelido {
+  margin: 0;
+}
+
+.id {
+  margin: 0;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 ;
 }
