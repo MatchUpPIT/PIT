@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchUp</title>
+    <link rel="icon" type="image/svg+xml" href="icon.ico" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <form>
+            <div class="main-cadastro-quadra">
+                <div class="card-cadastro-quadra">
+                    <h1>CADASTRO QUADRA</h1>
+                    <div class="cards">
+                        <div class="card-left">
+                            <div class="textfield">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite o nome da quadra">
+                            </div>
+                            <div class="textfield">
+                                <label for="endereco">Endereco</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço da quadra">
+                            </div>
+                            <div class="textfield">
+                                <label for="horario-abertura">Horário de Abertura</label>
+                                <input type="time" id="horario1" name="horario-abertura">
+                            </div>
+                            <div class="textfield">
+                                <label for="horario-encerramento">Horário de Encerramento</label>
+                                <input type="time" id="horario2" name="horario-encerramento">    
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <div class="textfield">
+                                <label for="esportes">Esporte</label>
+                                <select id="esportes" name="esportes" placeholder="Selecione o esporte principal da quadra">
+                                    <option value="">Escolha o esporte</option>
+                                    <option value="Basquete">Basquete</option>
+                                    <option value="Futsal">Futsal</option>
+                                    <option value="Futvolei">Futvolei</option>
+                                    <option value="Society">Society</option>
+                                    <option value="Volei">Volei</option>
+                                </select>
+                            </div>
+                            <div class="checkboxs">
+                                <label>Dias de Funcionamento</label>
+                                <div>
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="domingo" value="Domingo">
+                                        <label for="domingo">Domingo</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="segunda" value="Segunda-Feira">
+                                        <label for="segunda">Segunda Feira</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="terca" value="Terca-Feira">
+                                        <label for="terca">Terça Feira</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="quarta" value="Quarta-Feira">
+                                        <label for="quarta">Quarta Feira</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="quinta" value="Quinta-Feira">
+                                        <label for="quinta">Quinta Feira</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="sexta" value="Sexta-Feira">
+                                        <label for="sexta">Sexta Feira</label><br>
+                                    </div>
+
+                                    <div class="checkbox-div">
+                                        <input type="checkbox" id="check" name="sabado" value="Sabado">
+                                        <label for="sabado">Sábado</label>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>  
+                    </div>  
+                    <button class="btn-criar" id="btn-criar">Criar</button>
+                </div>
+            </div>
+        <form>
+    <script src="script.js"></script>
+</body>
+</html>
+
